@@ -1,0 +1,430 @@
+
+html {
+    color: #000000;
+    font-size: 13px;
+    line-height: 30px;
+}
+
+body {
+    background: rgb(204, 181, 80);
+    font-family:  Arial, Verdana, Helvetica, sans-serif; 
+
+    width: 95%;
+    min-width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 20px;
+    border-bottom: 1px solid #3300cc;
+    width: 20%;
+}
+h2 {font-size: 18px;}
+h3 {font-size: 16px;}
+h4 {font-size: 14px;}
+h5 {font-size: 12px;}
+h6 {font-size: 10px;}
+
+br { clear: both; }
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #3300cc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+form {
+    margin-bottom:50px;
+}
+
+label {
+    display: block;
+    float: left;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="number"],
+input[type="range"],
+input[type="search"],
+input[type="tel"],
+input[type="url"],
+input[type="email"],
+input[type="color"],
+select {
+    display: block;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+}
+
+
+
+/* exemplo formatacao checkbox e radio : <label class="lbl-radio-check">*/
+label.lbl-radio-check input[type="checkbox"], 
+label.lbl-radio-check input[type="radio"]{
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+label.lbl-radio-check {
+    width: 120px;
+    padding: 4px 6px;
+    background: #ddd;
+}
+
+
+
+/* =================================================================================================
+ * margem esquerda - usar como class nos label, por exemplo: <label class="margemEsquerda-20">
+ * ============================================================================================== */
+.margemEsquerda-10 {margin-left: 10px !important;} 
+.margemEsquerda-20 {margin-left: 20px !important;}
+
+
+/* =============================================
+ * largura (width) dos campos - usar como class
+ * =========================================== */
+.largura-50  {width:  50px !important;}
+.largura-75  {width:  75px !important;}
+.largura-300 {width: 300px !important;}
+.largura-325 {width: 325px !important;}
+.largura-350 {width: 350px !important;}
+.largura-525 {width: 525px !important;}
+.largura-550 {width: 550px !important;}
+.largura-900 {width: 900px !important;}
+
+
+/* ====================================================
+ * alinhamento componentes - usar como class
+ * ================================================= */
+.componenteEsquerda  { float: left !important; }
+.componenteDireita { float: right !important; }
+
+
+/* =======================================
+* alinhamento texto 
+* ====================================== */
+.t-center {text-align: center !important;}
+.t-right { text-align: right !important; }
+
+
+/* ==========================================================================
+ * classe para botões
+ * ========================================================================== */
+.botao {
+    float: left;
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px !important;
+    background: brown; /*238712*/
+    color:aqua !important;
+    text-transform: uppercase;    
+}
+
+.botao:hover {
+    background: #7ddb6d;
+}
+
+
+
+
+/*
+
+textarea{
+    display: block;
+    width: 400px;
+    height: 90px;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+fieldset{
+    padding: 10px;
+    border: 1px solid #ccc;
+    direction:ltr; 
+    margin-top: 10px;
+}
+
+legend{
+    padding: 0 4px;
+    color:#fff;
+    background: #7ddb6d;
+    border: 1px solid #ccc;
+    padding: 0 15px;
+}
+
+
+label span.error {
+    font-size: 11px;
+    color: #ab1616;
+}
+
+p {
+    color: blue;
+    line-height: 3px; /* tamanho da altura de cada linha * /
+    letter-spacing: 13px; /* tamanho do espaço entre cada letra * /
+    word-spacing: 5px; /* tamanho do espaço entre cada palavra * /
+    text-indent: 30px; /* tamanho da margem da primeira linha do texto * /
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+.qtd-total-resultados {
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    background: #7ddb6d;
+    color: #fff;
+}
+
+
+
+/* ==========================
+ * Tema das tabelas (table)
+ * ========================* /
+table {
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+/* area de titulo * /
+table thead th,
+table thead td {
+    padding: 4px 10px;
+    background-color: #53b044;
+    color: white;
+    font-weight: normal;
+    text-align:center;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: #9dcc7a;
+}
+
+/* area de dados * /
+table tbody tr {
+    background-color: #ffffff;
+}
+
+table tbody th,
+table tbody td {
+    padding: 8px 10px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #9dcc7a;
+}
+
+/* efeito hover nos dados  * /
+table tr:hover {
+    background-color:#d4ffaa;
+}
+
+/* alinhamento dos dados * /
+table th.centro,
+table td.centro{
+    text-align: center;
+}
+table th.direita,
+table td.direita {
+    text-align: right;
+}
+
+table th.esquerda,
+table td.esquerda {
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+* Menu Geral   - em uso
+* ========================================================================== * /
+nav#menu-geral {
+    height: 40px;
+    background: #53b044;
+}
+nav#menu-geral ul li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    list-style: none;    
+}
+nav#menu-geral ul li a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    color: #fff;
+}
+nav#menu-geral ul li a:hover {
+    background: #7ddb6d;
+}
+nav#menu-geral ul li ul.sub-menu {
+    display: none;
+    position: absolute;
+    background: #7ddb6d;
+}
+nav#menu-geral ul li ul.sub-menu li.item-sub-menu {
+    float: none;
+    min-width: 180px;
+    height: 30px;
+    line-height: 30px;
+}
+nav#menu-geral ul li ul.sub-menu li.item-sub-menu a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    color: #fff;
+}
+nav#menu-geral ul li ul.sub-menu li.item-sub-menu a:hover {
+    /*color: #238712;* /
+    background: #53b044;
+}
+nav#menu-geral ul li:hover ul.sub-menu {display: block;}
+
+
+
+
+a {
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+a:visited { color: #333; }
+a:hover { color: #666; }
+a:active,a:hover { outline: 0; }
+
+
+
+
+
+
+
+
+
+
+
+.div-login {
+    max-width: 300px;
+    padding: 29px 29px 29px;
+    margin: 0 auto 20px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    text-align: center;
+}
+
+.div-login select,
+.div-login input,
+.div-login button {
+    font-family: sans-serif;
+    font-size: 16px;
+    height: auto;
+    width: 90%;
+    padding: 7px 9px;
+    margin: 10px;
+    border: 1px solid #aaa;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.div-login button {
+    background-color: #3CB33D;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: none;
+}
+
+.div-erro {
+    max-width: 600px;
+    background-color: #FF3F3F;
+    padding: 29px 29px 29px;
+    margin: 0 auto 20px;
+    border: 1px solid #FF0000;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #000000;
+}
+
+.div-rodape {
+    clear: both;
+    width: 100%;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 10px;
+    text-align: center;
+    background-repeat: repeat-x;
+    padding: 10px 0;
+}
+
+.div-rodape a {
+    text-decoration: none;
+    font-style: italic; 
+
+}
+
+img {
+    vertical-align: auto;
+    border: 0;
+}
+
+figure {
+    background-color: #f2f2f2;
+    border: 1px solid #0000ff;
+    text-align: center;
+    width: 450px;
+
+}
+
+figcaption {
+    font-style: italic;
+    font-weight: bold;
+    color: #0000ff;
+}
+
+
+
+*/
